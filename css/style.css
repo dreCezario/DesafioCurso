@@ -6,16 +6,21 @@
 }
 
 .header {
-    position: relative;
     text-align: center;
-    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    top: 40px;
+    left: 0px;
+    background: #707070;
+    color: white;
 }
 
 .header h4 {
+    font-weight: 400;
     margin-bottom: 5px;
 }
 
-.header h2 {
+.header h1 {
     margin-bottom: 20px;
 }
 
@@ -28,9 +33,18 @@
 }
 
 .header ul li button {  
+    color: #888888;
+    text-align: center;
     margin-right: 50px; 
     top: 5px;
     left: 5px;
     width: 160px;
-    height: 35px;
+    height: 40px;
+    box-shadow: 0px 1px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 4px;
+}
+
+.article {
+    color: #888888;
 }
