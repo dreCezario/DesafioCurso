@@ -42,27 +42,36 @@
             
         </article>
 
-        <form class="form">
+        <form class="formCadastro" id="formCadastro">
             <div class="divInput">
                 <label>Seu nome:</label>
-                <input type="text" class="inputText">
+                <input type="text" class="inputText" name="nome">
+                <span class="erro"></span>
                 <br>
                 <label>Email:</label>
-                <input type="text" class="inputText">
+                <input type="text" class="inputText" name="email">
+                <span class="erro"></span>
                 <br>
                 <label>CPF:</label>
-                <input type="text" class="inputText">
+                <input type="text" class="inputText" name="cpf">
+                <span class="erro"></span>
                 <br>
             </div>
-            <label>Masculino</label>
-            <input type="checkbox" name="" id="checkbox1">
-            <label>Feminino</label>
-            <input type="checkbox" name="" id="checkbox2">
+            <div class="divInputCheck">
+                <label class="container">Masculino
+                    <input type="radio" name="radio">
+                    <span class="erro"></span>
+                  </label>
+                  <label class="container">Feminino
+                    <input type="radio" name="radio">
+                  </label>
             <div class="divButton">
                 <button type="submit">Enviar</button>
             </div>
         </form>
     </section>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

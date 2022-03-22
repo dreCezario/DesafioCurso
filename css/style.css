@@ -59,43 +59,94 @@
 }
 
 .article {
+    padding-right: 10px;
     color: #888888;
     width: 60%;
 }
 
-.form {
+.formCadastro {
+    padding-left: 10px;
     color: #888888;
     width: 40%;
 }
 
-.form .inputText {
+.formCadastro .inputText {
     width: 340px;
     height: 30px;
 }
 
-.form .divButton button {
+.formCadastro .divButton {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formCadastro .divButton button {
     width: 340px;
     height: 30px;
     color: #888888;
 }
 
-#checkbox1 {
-    border-radius: 5px 5px 5px 5px;
-    
-}
 
-#checkbox2 {
-    border-radius: 50px 50px 50px 50px;
-    
-}
-
-.divInput {
+.formCadastro .divInput {
     display: flex;
     flex-direction: column;
 }
 
-.divButton {
-    margin-top: 6px;
-    display: flex;
-    flex-direction: column;
+/************
+* CHECKMARK
+*************/
+
+.divInputCheck .checkbox {
+    width: 18px;
+    border-radius: 10px 10px 10px 10px;
 }
+
+.container {
+    padding-right: 20px;
+    padding-left: 3px;
+    margin-bottom: 12px;
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #ccc;
+    border-radius: 15px 15px;
+}
+
+
+.container:hover input ~ .checkmark {
+    background-color: #888888;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: blue;
+}
+
+/************
+* FORMULARIO
+*************/
+
+
+.inputError {
+    border: 1px solid red;
+  }
+
+  .erro {
+    color: red;
+  }
