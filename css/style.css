@@ -56,6 +56,7 @@
     display: flex;
     margin: 0 290px;
     font-size: 12px;
+    width: 100vh;
 }
 
 .article {
@@ -138,6 +139,7 @@
     background-color: blue;
 }
 
+
 /************
 * FORMULARIO
 *************/
@@ -149,4 +151,97 @@
 
   .erro {
     color: red;
+  }
+
+/************
+* PRODUTOS
+*************/
+.division {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.division .nada {
+    color: #707070;
+    display: block;
+    content: '';
+    width: 35vh;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+    justify-content: center;
+
+}
+
+.division .item1, .item2, .item3 {
+    color: #707070;
+}
+
+
+
+
+  @media(max-width: 950px){
+      .firstSection{
+          display: flex;
+          flex-direction: column;
+          
+      }
+      .formCadastro{
+          margin-top: 15px;
+          font-size: 10px;
+          
+      }
+      .formCadastro .inputText {
+          width: 230px;
+          height: 25px;
+      }
+      .formCadastro .divButton button {
+        width: 230px;
+        height: 25px;
+        color: #888888;
+    }
+      .article{
+          margin-top: 25px;
+          width: 230px;
+          font-size: 10px;
+          text-align: center;
+          justify-content: center;
+      }
+      .header ul {
+        display: flex;
+        flex-direction: row;  
+    }
+      .header ul button {
+        width: 230px;
+        font-size: 10px;
+        text-align: center;
+        justify-items: center;
+        margin-top: 15px;
+        
+    }
+    .header {
+        background-image: url(/css/fundo2.png);
+        text-align: center;
+        height: 400px;
+        top: 40px;
+        left: 0px;
+        color: white;
+    }
+    
+    .header h4 {
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    
+    .header h1 {
+        margin-bottom: 20px;
+    }
+    body {
+        width: 100%;
+    }
+    
+     
+    
   }
